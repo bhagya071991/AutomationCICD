@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <test verbose="2" preserve-order="true" name="Exception Handling">
+        <classes>
+           <class name="RSAFramework.Tests.exceptionHandlingTest">
+                <methods>
+                    <include name="ExceptionHandle"/>
+                    <include name="productException"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="Product Ordering">
+        <classes>
+           <class name="RSAFramework.Tests.submitOrderTest">
+                <methods>
+                    <include name="PlaceOrder"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
